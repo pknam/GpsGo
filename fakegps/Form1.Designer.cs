@@ -47,7 +47,8 @@
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(12, 71);
+            this.gMapControl1.Location = new System.Drawing.Point(14, 89);
+            this.gMapControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 20;
             this.gMapControl1.MinZoom = 2;
@@ -61,7 +62,7 @@
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(738, 474);
+            this.gMapControl1.Size = new System.Drawing.Size(843, 592);
             this.gMapControl1.TabIndex = 0;
             this.gMapControl1.Zoom = 6D;
             this.gMapControl1.OnPositionChanged += new GMap.NET.PositionChanged(this.gMapControl1_OnPositionChanged);
@@ -70,59 +71,61 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 15);
+            this.label1.Location = new System.Drawing.Point(11, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 12);
+            this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "Lat";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 42);
+            this.label2.Location = new System.Drawing.Point(11, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 12);
+            this.label2.Size = new System.Drawing.Size(31, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Lng";
             // 
             // lbLat
             // 
             this.lbLat.AutoSize = true;
-            this.lbLat.Location = new System.Drawing.Point(42, 15);
+            this.lbLat.Location = new System.Drawing.Point(48, 19);
             this.lbLat.Name = "lbLat";
-            this.lbLat.Size = new System.Drawing.Size(0, 12);
+            this.lbLat.Size = new System.Drawing.Size(0, 15);
             this.lbLat.TabIndex = 5;
             // 
             // lbLng
             // 
             this.lbLng.AutoSize = true;
-            this.lbLng.Location = new System.Drawing.Point(42, 42);
+            this.lbLng.Location = new System.Drawing.Point(48, 52);
             this.lbLng.Name = "lbLng";
-            this.lbLng.Size = new System.Drawing.Size(0, 12);
+            this.lbLng.Size = new System.Drawing.Size(0, 15);
             this.lbLng.TabIndex = 6;
             // 
             // lbZoom
             // 
             this.lbZoom.AutoSize = true;
-            this.lbZoom.Location = new System.Drawing.Point(178, 32);
+            this.lbZoom.Location = new System.Drawing.Point(203, 40);
             this.lbZoom.Name = "lbZoom";
-            this.lbZoom.Size = new System.Drawing.Size(38, 12);
+            this.lbZoom.Size = new System.Drawing.Size(45, 15);
             this.lbZoom.TabIndex = 7;
             this.lbZoom.Text = "label3";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 557);
+            this.ClientSize = new System.Drawing.Size(871, 696);
             this.Controls.Add(this.lbZoom);
             this.Controls.Add(this.lbLng);
             this.Controls.Add(this.lbLat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gMapControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
